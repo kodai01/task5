@@ -5,29 +5,17 @@ li {
     color: #ffffff;
 }
 
-.header-icon {
+.header-icon, .header-contents a, .sub-bar > a {
     color: #ffffff;
 }
 
-.header-contents a {
-    color: #ffffff;
+.header-image {
+    width: 143px;
+    height: 24px;
 }
 
 .sub-bar {
     background-color: #000000;
-}
-
-.sub-bar > a {
-    color: #ffffff;
-}
-
-/*ハンバーガーバー*/
-.navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar-toggler-icon {
-    width: 18px;
 }
 
 button.navbar-toggler:focus {
@@ -35,15 +23,23 @@ button.navbar-toggler:focus {
 }
 
 @media screen and (min-width: 1200px) {
-    .dropdown:hover>.dropdown-menu {
+    .dropdown:hover > .dropdown-menu {
         display: block;
     }
 
-    .header-wrapper {
-        background-color: rgba(0,0,0,0.5)
+    nav {
+        background-color: rgba(0,0,0,0.5);
     }
 
-    .sub-bar {
+    .header-icon {
+        margin-left: auto;
+    }
+
+    .collapse {
+        margin-right: auto;
+    }
+
+    .dropdown-menu {
         padding: 0;
         width: 220px;
         height: auto;
@@ -56,11 +52,15 @@ button.navbar-toggler:focus {
 
     .sub-bar > a:hover {
         background-color: #442606;
-        color: #ffffff
+        color: #ffffff;
     }
 
-    .header-contents:last-child {
-        padding-right: 130px;
+    #navbarSupportedContent {
+        flex-grow: 0;
+    }
+
+    .header-contents {
+        padding-left: 259px;
     }
 
     .header-contents > li > a {
@@ -73,9 +73,6 @@ button.navbar-toggler:focus {
 
     nav .dropdown-menu {
         position: absolute;
-    }
-
-    .dropdown-menu.sub-bar {
         top: 85px;
     }
 
@@ -87,7 +84,11 @@ button.navbar-toggler:focus {
 @media screen and (max-width: 1199px) {
     .header-wrapper {
         padding: 2px;
-        background-color: rgb(0,0,0);
+        background-color: #000000;
+    }
+
+    .header-image {
+        margin-left: 30px;
     }
 
     .sub-bar a {
@@ -96,13 +97,41 @@ button.navbar-toggler:focus {
         padding: 10px 0;
     }
 
-}
+    /*ハンバーガーバー*/
+    #humberger {
+        width: 58px;
+        height: 58px;
+        position: absolute;
+        display: inline-block;
+        box-sizing: border-box;
+        right: 0;
+        top: 0;
+        padding: 0;
+    }
 
-@media screen and (min-width: 768px) {
-    .header-image {
-        width: 143px;
-        height: 24px;
-        margin-left: 30px;
+     #humberger_box {
+        height: 18px;
+        width: 15px;
+        position: absolute;
+        right: 22px;
+        margin-top: 8px;
+    }
+
+    #humberger_box div {
+        position: absolute;
+        height: 3px;
+        width: 15px;
+        background-color: #ffffff;
+        border-radius: 1px;
+        box-sizing: border-box;
+    }
+
+    #humberger_box div:nth-of-type(2) {
+        top: 6px;
+    }
+
+    #humberger_box div:last-of-type {
+        top: 12px;
     }
 }
 
@@ -117,3 +146,4 @@ button.navbar-toggler:focus {
         padding: 2px 0;
     }
 }
+ 
