@@ -1,4 +1,4 @@
-li {
+header li {
     list-style: none;
     font-size: 13px;
     padding: 0 10px;
@@ -12,55 +12,44 @@ li {
 .header-image {
     width: 143px;
     height: 24px;
+    margin-left: 30px;
 }
 
-.sub-bar {
+header .sub-bar {
     background-color: #000000;
 }
 
-button.navbar-toggler:focus {
+header button.navbar-toggler:focus {
     outline: none;
 }
 
 @media screen and (min-width: 1200px) {
-    .dropdown:hover > .dropdown-menu {
+    header .dropdown:hover > .dropdown-menu {
         display: block;
     }
 
-    nav {
+    header nav {
         background-color: rgba(0,0,0,0.5);
     }
 
-    .header-icon {
-        margin-left: auto;
-    }
-
-    .collapse {
-        margin-right: auto;
-    }
-
-    .dropdown-menu {
+    header .dropdown-menu {
         padding: 0;
         width: 220px;
         height: auto;
     }
 
-    .sub-bar > a {
+    header .sub-bar > a {
         font-size: 14px;
         padding: 17px 18px;
     }
 
-    .sub-bar > a:hover {
+    header .sub-bar > a:hover {
         background-color: #442606;
         color: #ffffff;
     }
 
-    #navbarSupportedContent {
-        flex-grow: 0;
-    }
-
     .header-contents {
-        padding-left: 259px;
+        padding-right: 130px;
     }
 
     .header-contents > li > a {
@@ -71,12 +60,12 @@ button.navbar-toggler:focus {
         color: #999999;
     }
 
-    nav .dropdown-menu {
+    header nav .dropdown-menu {
         position: absolute;
         top: 85px;
     }
 
-    .navbar {
+    header .navbar {
         padding: 0;
     }
 }
@@ -91,33 +80,22 @@ button.navbar-toggler:focus {
         margin-left: 30px;
     }
 
-    .sub-bar a {
+    header .sub-bar a {
         display: inline-block;
         font-size: 13px;
         padding: 10px 0;
     }
 
     /*ハンバーガーバー*/
-    #humberger {
-        width: 58px;
-        height: 58px;
-        position: absolute;
-        display: inline-block;
-        box-sizing: border-box;
-        right: 0;
-        top: 0;
+    header .navbar-toggler {
+        height: 17px;
+        width: 17px;
+        position: relative;
+        right: 22px;
         padding: 0;
     }
 
-     #humberger_box {
-        height: 18px;
-        width: 15px;
-        position: absolute;
-        right: 22px;
-        margin-top: 8px;
-    }
-
-    #humberger_box div {
+    header button div {
         position: absolute;
         height: 3px;
         width: 15px;
@@ -126,13 +104,18 @@ button.navbar-toggler:focus {
         box-sizing: border-box;
     }
 
-    #humberger_box div:nth-of-type(2) {
+    header button div:first-of-type {
+        top: 0;
+    }
+
+    header button div:nth-of-type(2) {
         top: 6px;
     }
 
-    #humberger_box div:last-of-type {
-        top: 12px;
+    header button div:last-of-type {
+        bottom: 0;
     }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -146,4 +129,3 @@ button.navbar-toggler:focus {
         padding: 2px 0;
     }
 }
- 
