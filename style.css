@@ -87,7 +87,7 @@ header button.navbar-toggler:focus {
     }
 
     /*ハンバーガーバー*/
-    header .navbar-toggler {
+    .hamburger {
         height: 17px;
         width: 17px;
         position: relative;
@@ -95,24 +95,23 @@ header button.navbar-toggler:focus {
         padding: 0;
     }
 
-    header button div {
+    header .hamburger-bar {
         position: absolute;
         height: 3px;
         width: 15px;
         background-color: #ffffff;
         border-radius: 1px;
-        box-sizing: border-box;
     }
 
-    header button div:first-of-type {
+    header .hamburger-bar:first-of-type {
         top: 0;
     }
 
-    header button div:nth-of-type(2) {
+    header .hamburger-bar:nth-of-type(2) {
         top: 6px;
     }
 
-    header button div:last-of-type {
+    header .hamburger-bar:last-of-type {
         bottom: 0;
     }
     
