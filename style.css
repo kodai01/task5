@@ -11,7 +11,7 @@ header li {
     width: 100%;
 }
 
-.header-icon, .header-contents a, .sub-bar > a, #summary {
+.header-icon, .header-contents a, .sub-bar > a, .summary {
     color: #ffffff;
 }
 
@@ -48,7 +48,7 @@ header button.navbar-toggler:focus {
     position: absolute;
     z-index: 1;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 35vw;
     left: 50%;
     margin: 0;
     color: #ffffff;
@@ -58,7 +58,7 @@ header button.navbar-toggler:focus {
     writing-mode: vertical-rl;
 }
 
-#summary {
+.summary {
     width: 100%;
     height: auto;
     background-color: #000000;
@@ -69,16 +69,16 @@ header button.navbar-toggler:focus {
     padding: 50px 0 80px;
 }
 
-.top-message, #summary h1 {
+.top-message, .summary h1 {
     font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-#summary h1{
+.summary h1 {
     font-size: 36px;
     line-height: 1.5;
 }
 
-#summary p {
+.summary p {
     font-size: 14px;
     line-height: 2.6;
 }
@@ -198,11 +198,11 @@ header button.navbar-toggler:focus {
         padding: 2px 0;
     }
 
-    .top-message, #summary h1 {
+    .top-message, .summary h1 {
         font-size: 20px;
     }
 
-    #summary p {
+    .summary p {
         line-height: 2;
     }
 }
