@@ -65,22 +65,59 @@ header button.navbar-toggler:focus {
     text-align: center;
 }
 
-.container {
+.summary .container {
     padding: 50px 0 80px;
 }
 
-.top-message, .summary h1 {
+.top-message, h1 {
     font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-.summary h1 {
+h1 {
     font-size: 36px;
     line-height: 1.5;
 }
 
-.summary p {
+.summary p, #explanation p {
     font-size: 14px;
     line-height: 2.6;
+}
+
+#explanation .images {
+    font-size: 0;
+    width: 92%;
+    margin: 120px auto 0;
+}
+
+#explanation .image1 {
+    background-image: url("https://tcdwp.fun/tcd063/wp-content/uploads/2018/09/top_4images_1.jpg");
+}
+
+#explanation .image2 {
+    background-image: url("https://tcdwp.fun/tcd063/wp-content/uploads/2018/09/top_4images_2.jpg");
+}
+
+#explanation .image3 {
+    background-image: url("https://tcdwp.fun/tcd063/wp-content/uploads/2018/09/top_4images_3.jpg");
+}
+
+#explanation .image4 {
+    background-image: url("https://tcdwp.fun/tcd063/wp-content/uploads/2018/09/top_4images_4.jpg");
+}
+
+#explanation .image {
+    display: inline-block;
+    background-size: cover;
+    width: 25%;
+    height: 23vw;
+}
+
+#explanation .message {
+    background-color: #f5f5f5;
+    text-align: center;
+    width: 92%;
+    padding: 50px 0;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -198,12 +235,21 @@ header button.navbar-toggler:focus {
         padding: 2px 0;
     }
 
-    .top-message, .summary h1 {
+    .top-message, h1 {
         font-size: 20px;
     }
 
-    .summary p {
+    .summary p, #explanation p {
         line-height: 2;
+    }
+
+    #explanation .images {
+        margin-top: 40px;
+    }
+
+    #explanation .image {
+        width: 50%;
+        height: 46vw;
     }
 }
  
