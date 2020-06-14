@@ -85,38 +85,19 @@ h1 {
 
 #explanation .images {
     font-size: 0;
-    width: 92%;
     margin: 120px auto 0;
-}
-
-#explanation .image1 {
-    background-image: url("https://tcdwp.fun/tcd063/wp-content/uploads/2018/09/top_4images_1.jpg");
-}
-
-#explanation .image2 {
-    background-image: url("https://tcdwp.fun/tcd063/wp-content/uploads/2018/09/top_4images_2.jpg");
-}
-
-#explanation .image3 {
-    background-image: url("https://tcdwp.fun/tcd063/wp-content/uploads/2018/09/top_4images_3.jpg");
-}
-
-#explanation .image4 {
-    background-image: url("https://tcdwp.fun/tcd063/wp-content/uploads/2018/09/top_4images_4.jpg");
 }
 
 #explanation .image {
     display: inline-block;
     background-size: cover;
     width: 25%;
-    height: 23vw;
 }
 
 #explanation .message {
     background-color: #f5f5f5;
     text-align: center;
-    width: 92%;
-    padding: 50px 0;
+    padding: 50px 20px;
     margin: 0 auto;
 }
 
@@ -249,7 +230,10 @@ h1 {
 
     #explanation .image {
         width: 50%;
-        height: 46vw;
+    }
+
+    #explanation .message {
+        padding: 35px;
     }
 }
  
