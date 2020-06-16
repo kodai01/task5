@@ -84,12 +84,11 @@ h1 {
 }
 
 #explanation .images {
-    font-size: 0;
+    display: flex;
     margin: 120px auto 0;
 }
 
-#explanation .image {
-    display: inline-block;
+#explanation img {
     background-size: cover;
     width: 25%;
 }
@@ -225,10 +224,11 @@ h1 {
     }
 
     #explanation .images {
+        flex-wrap: wrap;
         margin-top: 40px;
     }
 
-    #explanation .image {
+    #explanation img {
         width: 50%;
     }
 
