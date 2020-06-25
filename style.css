@@ -82,7 +82,7 @@ h1 {
     line-height: 1.5;
 }
 
-.summary p, #explanation p, #card p {
+.summary p, #explanation p, #cards p {
     font-size: 14px;
     line-height: 2.6;
 }
@@ -106,21 +106,21 @@ h1 {
     border: none;
 }
 
-#card .triangle {
+#cards .triangle {
     position: relative;
 }
 
-#card .triangle::before {
+#cards .triangle::before {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     border-bottom: 150px solid transparent;
-    border-left: 150px solid #ffffff;
+    border-left: 150px solid #fff;
     content: "";
 }
 
-#card .triangle::after {
+#cards .triangle div {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,44 +131,29 @@ h1 {
     font-weight: bold;
 }
 
-#card .concept::after {
-    content: "CONCEPT";
-}
-
-#card .service::after {
-    content: "SERVICE";
-}
-
-#card .floor::after {
-    content: "FLOOR";
-}
-
-#card img {
+#cards img {
     width: 100%;
 }
 
-#card .message {
-    display: flex;
+#cards .message {
     height: 100%;
     background-color: #f5f5f5;
-    flex-direction: column;
 }
 
-#card button {
+#cards button {
+    display: block;
     min-width: 200px;
     margin: 0 auto 30px;
     padding: 10px;
     border: none;
-    background-color: #000000;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
 }
 
-#card button:hover {
+#cards button:hover {
     background-color: #442602;
-}
-
-#card button p {
-    color: #ffffff;
-    margin: 0;
+    transition: 1.0s;
 }
 
 @media screen and (min-width: 1200px) {
@@ -258,7 +243,7 @@ h1 {
         position: absolute;
         height: 3px;
         width: 15px;
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 1px;
     }
 
@@ -273,8 +258,8 @@ h1 {
     header .hamburger-bar:last-of-type {
         bottom: 0;
     }
-    
-    #card button {
+
+    #cards button {
         min-width: 150px;
     }
 }
@@ -294,7 +279,7 @@ h1 {
         font-size: 20px;
     }
 
-    .summary p, #explanation p, #card p {
+    .summary p, #explanation p, #cards p {
         line-height: 2;
     }
 
@@ -311,15 +296,7 @@ h1 {
         padding: 35px;
     }
 
-    .card {
-        margin-bottom: 20px;
-    }
-
-    #card .triangle::after {
-        font-size: 18px;
-    }
-
-    #card button p {
+    #cards button {
         font-size: 12px;
     }
 }
