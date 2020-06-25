@@ -149,11 +149,11 @@ h1 {
     background-color: #000;
     color: #fff;
     font-size: 14px;
+    transition: 1.0s;
 }
 
 #cards button:hover {
     background-color: #442602;
-    transition: 1.0s;
 }
 
 @media screen and (min-width: 1200px) {
