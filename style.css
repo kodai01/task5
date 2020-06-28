@@ -29,6 +29,10 @@ header button.navbar-toggler:focus {
     outline: none;
 }
 
+section:not(:first-of-type) {
+    margin: 100px auto 0;
+}
+
 #top, .top-image {
     width: 100%;
 }
@@ -78,14 +82,13 @@ h1 {
     line-height: 1.5;
 }
 
-.summary p, #explanation p {
+.summary p, #explanation p, #cards p {
     font-size: 14px;
     line-height: 2.6;
 }
 
 #explanation .images {
     display: flex;
-    margin: 120px auto 0;
 }
 
 #explanation img {
@@ -97,6 +100,60 @@ h1 {
     text-align: center;
     padding: 50px 20px;
     margin: 0 auto;
+}
+
+.card {
+    border: none;
+}
+
+#cards .triangle {
+    position: relative;
+}
+
+#cards .triangle::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #fff;
+    content: "";
+}
+
+#cards .triangle div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding-left: 3px;
+    color: #442602;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cards img {
+    width: 100%;
+}
+
+#cards .message {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+#cards button {
+    display: block;
+    min-width: 200px;
+    margin: 0 auto 30px;
+    padding: 10px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    transition: 1.0s;
+}
+
+#cards button:hover {
+    background-color: #442602;
 }
 
 @media screen and (min-width: 1200px) {
@@ -186,7 +243,7 @@ h1 {
         position: absolute;
         height: 3px;
         width: 15px;
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 1px;
     }
 
@@ -200,6 +257,10 @@ h1 {
 
     header .hamburger-bar:last-of-type {
         bottom: 0;
+    }
+
+    #cards button {
+        min-width: 150px;
     }
 }
 
@@ -218,7 +279,7 @@ h1 {
         font-size: 20px;
     }
 
-    .summary p, #explanation p {
+    .summary p, #explanation p, #cards p {
         line-height: 2;
     }
 
@@ -233,6 +294,10 @@ h1 {
 
     #explanation .message {
         padding: 35px;
+    }
+
+    #cards button {
+        font-size: 12px;
     }
 }
  
