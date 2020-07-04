@@ -156,6 +156,113 @@ h1 {
     background-color: #442602;
 }
 
+.title h1 {
+    font-weight: bold;
+}
+
+.title span {
+    padding-left: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+#newsevents {
+    padding: 55px 0 90px;
+    background-color: #f5f5f5;
+}
+
+#newsevents .list {
+    height: 400px;
+}
+
+#newsevents article {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#newsevents .news article {
+    height: 20%;
+    padding: 16px;
+    border: 1px solid #ddd;
+}
+
+#newsevents .news article p {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#newsevents .event article {
+    display: flex;
+    height: calc( 100% / 3);
+}
+
+#newsevents article:not(:first-of-type), #newsevents article:not(:first-of-type) .post {
+    border-top: none;
+}
+
+#newsevents article p {
+    text-overflow: ellipsis;
+}
+
+#newsevents time {
+    color: #999;
+    font-size: 12px;
+}
+
+#newsevents .wrap {
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#newsevents img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#newsevents img:hover {
+    transform: scale(1.2);
+}
+
+#newsevents .post {
+    width: 65%;
+    padding: 20px;
+}
+
+#newsevents .detail {
+    height: 24px;
+    padding: 20px 4px 0 0;
+    box-sizing: content-box;
+    text-align: right;
+}
+
+#newsevents a {
+    margin: 0 0 0 auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#newsevents a:hover {
+    color: #999;
+}
+
+#newsevents a::after {
+    display: inline-block;
+    transform: rotate(45deg);
+    width: 8px;
+    height: 8px;
+    margin: 0 0 2px 40px;
+    border-top: solid 1px #000;
+    border-right: solid 1px #000;
+    content: "";  
+    transition: 0.2s; 
+}
+
+#newsevents a:hover::after {
+    border-color: #999;
+}
+
 @media screen and (min-width: 1200px) {
     header {
         position: absolute;
@@ -207,6 +314,13 @@ h1 {
 
     header .navbar {
         padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #newsevents .post {
+        border: 1px solid #ddd;
+        border-left: none;
     }
 }
 
@@ -262,6 +376,23 @@ h1 {
     #cards button {
         min-width: 150px;
     }
+
+    #newsevents .wrap {
+        width: 40%;
+        }
+    
+    #newsevents .post {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 991px) {
+    #newsevents .wrap {
+        width: 30%;
+        }
+    
+    #newsevents .post {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -298,6 +429,31 @@ h1 {
 
     #cards button {
         font-size: 12px;
+    }
+
+    #newsevents article {
+        border: 1px solid #ddd;
+    }
+
+    #newsevents article p {
+        font-size: 14px;
+    }
+
+    #newsevents .news .list {
+        height: 450px;
+    }
+
+    #newsevents .event .list {
+        height: 270px;
+    }
+
+    #newsevents .wrap {
+        display: none;
+    }
+
+    #newsevents .post {
+        width: 100%;
+        padding: 10px 16px;
     }
 }
  
