@@ -163,103 +163,115 @@ h1 {
 .title span {
     padding-left: 10px;
     font-size: 14px;
+    font-weight: normal;
     vertical-align: middle;
 }
 
-#newsevents {
+#news-event {
     padding: 55px 0 90px;
     background-color: #f5f5f5;
 }
 
-#newsevents .list {
+#news-event .list {
     height: 400px;
 }
 
-#newsevents article {
+#news-event article {
     background-color: #fff;
-    cursor: pointer;
 }
 
-#newsevents .news article {
+#news-event .news article {
     height: 20%;
     padding: 16px;
     border: 1px solid #ddd;
 }
 
-#newsevents .news article p {
+#news-event .event article {
+    height: calc( 100% / 3);
+}
+
+#news-event article a {
+    color: #000;
+}
+
+#news-event article a:hover {
+    text-decoration: none;
+}
+
+#news-event .news article a {
+    display: block;
+}
+
+#news-event .news article a:hover {
+    color: #442602;
+}
+
+#news-event .event article a {
+    display: flex;
+    height: 100%;
+}
+
+#news-event article p {
+    text-overflow: ellipsis;
+}
+
+#news-event .news article p {
     white-space: nowrap;
     overflow: hidden;
 }
 
-#newsevents .event article {
-    display: flex;
-    height: calc( 100% / 3);
-}
-
-#newsevents article:not(:first-of-type), #newsevents article:not(:first-of-type) .post {
+#news-event article:nth-of-type(n+2), #news-event article:nth-of-type(n+2) .post {
     border-top: none;
 }
 
-#newsevents article p {
-    text-overflow: ellipsis;
-}
-
-#newsevents time {
+#news-event time {
     color: #999;
     font-size: 12px;
 }
 
-#newsevents .wrap {
+#news-event .wrap {
     width: 35%;
     height: 100%;
     overflow: hidden;
 }
 
-#newsevents img {
+#news-event img {
     width: 100%;
     height: 100%;
     transition: 0.5s;
 }
 
-#newsevents img:hover {
+#news-event .event article:hover > a > .wrap > img {
     transform: scale(1.2);
 }
 
-#newsevents .post {
+#news-event .post {
     width: 65%;
     padding: 20px;
 }
 
-#newsevents .detail {
+#news-event .detail {
     height: 24px;
-    padding: 20px 4px 0 0;
-    box-sizing: content-box;
+    margin: 20px 4px 0 0;
     text-align: right;
 }
 
-#newsevents a {
-    margin: 0 0 0 auto;
-    cursor: pointer;
+#news-event .detail a {
+    color: #000;
     transition: 0.2s;
 }
 
-#newsevents a:hover {
+#news-event .detail a:hover {
     color: #999;
+    text-decoration: none;
 }
 
-#newsevents a::after {
-    display: inline-block;
-    transform: rotate(45deg);
-    width: 8px;
-    height: 8px;
+#news-event .detail a::after {
     margin: 0 0 2px 40px;
-    border-top: solid 1px #000;
-    border-right: solid 1px #000;
-    content: "";  
-    transition: 0.2s; 
+    content: "\03e"; 
 }
 
-#newsevents a:hover::after {
+#news-event .detail a:hover::after {
     border-color: #999;
 }
 
@@ -318,7 +330,7 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-    #newsevents .post {
+    #news-event .post {
         border: 1px solid #ddd;
         border-left: none;
     }
@@ -377,20 +389,20 @@ h1 {
         min-width: 150px;
     }
 
-    #newsevents .wrap {
+    #news-event .wrap {
         width: 40%;
         }
     
-    #newsevents .post {
+    #news-event .post {
         width: 60%;
     }
 }
 @media screen and (max-width: 991px) {
-    #newsevents .wrap {
+    #news-event .wrap {
         width: 30%;
         }
     
-    #newsevents .post {
+    #news-event .post {
         width: 70%;
     }
 }
@@ -431,27 +443,27 @@ h1 {
         font-size: 12px;
     }
 
-    #newsevents article {
+    #news-event article {
         border: 1px solid #ddd;
     }
 
-    #newsevents article p {
+    #news-event article p {
         font-size: 14px;
     }
 
-    #newsevents .news .list {
+    #news-event .news .list {
         height: 450px;
     }
 
-    #newsevents .event .list {
+    #news-event .event .list {
         height: 270px;
     }
 
-    #newsevents .wrap {
+    #news-event .wrap {
         display: none;
     }
 
-    #newsevents .post {
+    #news-event .post {
         width: 100%;
         padding: 10px 16px;
     }
