@@ -278,52 +278,58 @@ h1 {
     border-color: #999;
 }
 
-#plan table {
-    width: 100%;
+#plan ul {
+    padding: 0;
 }
 
-#plan .list>div:nth-child(2) table {
+#plan .standard ul {
     border: 5px solid #442506;
 }
 
-#plan tr {
+#plan li {
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#plan li:first-child {
     height: 60px;
-}
-
-#plan tr:first-child {
     background-color: #a19283;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-#plan .list>div:nth-child(2) tr:first-child {
+#plan .standard li:first-child {
+    height: 55px;
     background-color: #442506;
 }
 
-#plan tr:nth-child(n+2) {
+#plan li:nth-child(n+2) {
     border: 1px solid #ddd; 
+    border-top: none;
 }
 
-#plan tr:nth-child(2) {
+#plan li:nth-child(2) {
+    height: 120px;
     border-top: none;
     background-color: #ece9e6;
+    flex-direction: column;
 }
 
-#plan th {
-    color: #fff;
-    font-size: 20px;
-}
-
-#plan tr:nth-child(2) p:first-child {
+#plan li:nth-child(2) p:first-child {
     font-size: 40px;
     font-weight: bold;
 }
 
-#plan tr:nth-child(2) span {
+#plan li:nth-child(2) span {
     font-size: 20px;
 }
 
-#plan tr:nth-child(n+3) td {
-    padding: 10px;
+#plan li:nth-child(n+3) {
+    padding: 16px 10px;
+    font-size: 14px;
 }
 
 #plan button {
