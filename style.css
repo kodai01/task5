@@ -278,11 +278,8 @@ h1 {
     border-color: #999;
 }
 
-#plan ul {
-    padding: 0;
-}
-
 #plan .standard ul {
+    padding: 0;
     border: 5px solid #442506;
 }
 
@@ -313,7 +310,6 @@ h1 {
 
 #plan li:nth-child(2) {
     height: 120px;
-    border-top: none;
     background-color: #ece9e6;
     flex-direction: column;
 }
