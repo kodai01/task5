@@ -244,7 +244,7 @@ h1 {
     transition: 0.5s;
 }
 
-#news-event .event article:hover > a > .wrap > img, #book-cowork a:hover > .wrap > img {
+#news-event .event article:hover > a > .wrap > img, #book-cowork a:hover > img {
     transform: scale(1.2);
 }
 
@@ -349,11 +349,8 @@ h1 {
 
 #book-cowork .trapezoid {
     position: relative;
-    color: #442602;
-}
-
-#book-cowork .wrap {
     overflow: hidden;
+    color: #442602;
 }
 
 #book-cowork .trapezoid::before {
